@@ -1,14 +1,44 @@
 CS50BOT
 CS50 Final Project
 by Connor Halleck-Dube
-
-Hour log:
-50 hours
+connor.halleck-dube@yale.edu
 
 This project requires:
-Starcraft: Broodwar v1.16.1 (In file)
+Starcraft: Broodwar v1.16.1 
+BWAPI 
 ChaosLauncher 
+(optional) Visual Studio C++ 
 
 
+Setup guide:
+1. Download BWAPI_412_Setup.exe from https://github.com/bwapi/bwapi/releases to install BWAPI.
 
-To Install BWAPI:
+At this point, ensure StarCraft/bwapi-data/AI was created by the BWAPI installation. If not already there, copy CS50BOT.dll into this path.
+
+
+To run the AI:
+
+1. Run ChaosLauncher as administrator 
+(BWAPI/ChaosLauncher/Chaoslauncher.exe)
+2. Select the BWAPI v4.1.2 Injector (Release)
+3. Select "config" and ensure that [ai = CS50BOT.dll] and 
+[auto_menu = SINGLE_PLAYER]
+4. "Start" to begin the game (after saving bwapi.ini)
+
+
+-Connor
+
+P.S.'s:
+
+The entire project is also packaged with its Visual Studio project and solution, in case you want to open the entire project. The Visual Studio project compiles to BWAPI/Release (NOT BWAPI/CS50BOT/Release).
+
+More information on BWAPI and how to run it and ChaosLauncher:
+http://www.teamliquid.net/blogs/485544-intro-to-scbw-ai-development
+
+Side note:
+It isn't necessary to compile and run a new version of the bot, but in case you wanted to do so:
+1. Compile the project within VS. 
+2. Go to BWAPI/Release and copy CS50BOT.dll (not .pdb)
+3. Paste the bot into Starcraft/bwapi-data/AI, on top of the version currently in that file.
+4. Run ChaosLauncher as admin.
+
