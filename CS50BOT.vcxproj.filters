@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Dll.cpp" />
+    <ClCompile Include="Source\CS50BOTModule.cpp" />
+    <ClCompile Include="Source\WorkerManager.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ProductionManager.cpp">
+      <Filter>Production</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataManager.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BuildingManager.cpp" />
+    <ClCompile Include="Source\BuildOrder.cpp" />
+    <ClCompile Include="Source\Core.cpp" />
+    <ClCompile Include="Source\CombatManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CS50BOTModule.h" />
+    <ClInclude Include="Source\WorkerManager.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ProductionManager.h">
+      <Filter>Production</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core.h" />
+    <ClInclude Include="Source\DataManager.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BuildingManager.h" />
+    <ClInclude Include="Source\BuildOrder.h" />
+    <ClInclude Include="Source\CombatManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Control">
+      <UniqueIdentifier>{55c016fa-b8c1-4727-9787-bcfb5c0f27ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Production">
+      <UniqueIdentifier>{b9849b4b-ea7a-4620-a5a6-0ddbc12d831e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

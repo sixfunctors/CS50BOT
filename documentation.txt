@@ -1,0 +1,14 @@
+CS50BOT
+CS50 Final Project
+by Connor Halleck-Dube
+
+Hour log:
+50 hours
+
+This project requires:
+Starcraft: Broodwar v1.16.1 (In file)
+ChaosLauncher 
+
+
+
+To Install BWAPI:
